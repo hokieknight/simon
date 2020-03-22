@@ -70,7 +70,7 @@ function resetGame() {
   userPattern = [];
   $("body").addClass("game-over");
   setTimeout(function () {
-    $("#level-title").text("Simon - Press Start");
+    $("#level-title").text("Simon");
     $("body").removeClass("game-over");
   }, 1000);
 
