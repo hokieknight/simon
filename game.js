@@ -10,6 +10,12 @@ $(document).on("keypress", function() {
     nextSequence();
 });
 
+$(".start").click(function() {
+  if (gameLevel === 0)
+    nextSequence();
+});
+
+
 $(".btn").click(function() {
   if (gameLevel === 0)
     return;
@@ -64,7 +70,7 @@ function resetGame() {
   userPattern = [];
   $("body").addClass("game-over");
   setTimeout(function () {
-    $("#level-title").text("Press A Key to Start");
+    $("#level-title").text("Simon - Press Start");
     $("body").removeClass("game-over");
   }, 1000);
 
